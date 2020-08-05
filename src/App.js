@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import Todo from './Todo/Todo.js'
 
+// Source: https://scotch.io/tutorials/create-a-simple-to-do-app-with-react
+
 class App extends Component {
   state = ({
     todos : [
@@ -56,7 +58,7 @@ class App extends Component {
           </span>
         </div>
         
-        <h3 className="TodoListHeading">TODOs List</h3>
+        <h3 className="TodoListHeading">TODOs List (Count: {this.state.todos.length}) </h3>
         <ul className="list-group list-group-flush">
           {todos}
         </ul>
